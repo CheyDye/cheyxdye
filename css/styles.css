@@ -1,1 +1,234 @@
+html , body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  /* t r b l  */
+}
 
+header,
+nav,
+main {
+  font-family: 'Lato', 'Open Sans', sans-serif;
+  padding-top: 60px;
+  padding-left: 50px;
+  font-size: 25px;
+  color: black;
+  text-decoration-line: none;
+}
+
+.cdlogo {
+  width: 175px;
+  height: 175px;
+  margin-left: 10px;
+  padding: 10px;
+  align-items: flex-start;
+}
+
+.vertical-menu {
+  width: 200px;
+  float: left;
+}
+
+.vertical-menu a {
+  color: black; /* Black text color */
+  display: block; /* Make the links appear below each other */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.vertical-menu a:hover {
+  color: #FC50F0 ;
+  /* #DBFC9A Green */
+}
+
+.vertical-menu a.active {
+  background-color: white;
+  color: #FC50F0 ; /* Pink */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-img {
+  margin-bottom: 80px;
+}
+
+h1 {
+  font-family: 'Lato', 'Open Sans', sans-serif;
+  font-size: 54px;
+  float: right;
+  margin-right: 310px;
+  margin-top: 150px;
+}
+
+.gallery {
+  margin-right: 150px;
+  font-size: 60px;
+}
+
+.getintouch {
+  font-family: 'Lato', 'Open Sans', sans-serif;
+  font-size: 54px;
+  float: right;
+  margin-right: 110px;
+  margin-top: 140px;
+}
+
+.cheyenne-img {
+  height: 500px;
+  width: 500px;
+  float: left;
+  margin-left: 80px;
+  margin-bottom: 60px;
+  margin-right: 40px;
+  align-items: flex-start;
+}
+
+.bio {
+  color: black;
+  font-family: 'Lato', 'Open Sans', sans-serif;
+  font-size: 16px;
+  margin-right: 50px;
+  line-height: 1.5;
+  font-weight: lighter;
+}
+
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(3 , 5fr);
+  grid-template-rows: repeat(3, 5vw);
+  grid-row-gap: 300px;
+  grid-column-gap: 50px;
+  grid-template-columns: repeat(auto-fit, 300px);
+  justify-content: center;
+}
+
+
+.gallery-img-1 {
+  margin-left: 20px;
+}
+.gallery-img-1:hover {
+  filter: blur(5px);
+}
+
+.gallery-img-2 {
+  margin-top: 50px;
+}
+.gallery-img-2:hover {
+  filter: blur(5px);
+}
+
+.gallery-img-3 {
+  margin-top: 25px;
+}
+.gallery-img-3:hover {
+  filter: blur(5px);
+}
+
+.gallery-img-4 {
+  margin-left: 33px;
+  margin-top: 20px;
+}
+.gallery-img-4:hover {
+  filter: blur(5px);
+}
+
+.gallery-img-5 {
+  margin-left: -17px;
+  margin-top: 40px;
+}
+.gallery-img-5:hover {
+  filter: blur(5px);
+}
+
+.gallery-img-6 {
+  margin-left: 38px;
+}
+.gallery-img-6:hover {
+  filter: blur(5px);
+}
+
+.contact-img {
+  margin-left: 50px;
+}
+
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+}
+
+form {
+  width: 350px;
+  font-family: 'Lato', 'Open Sans', sans-serif;
+  float: right;
+  font-size: 20px;
+  margin-right: 150px;
+  margin-bottom: 100px;
+}
+input,
+textarea {
+  border: 1px solid black;
+  width: 400px;
+  margin-bottom: 40px;
+}
+input {
+  height: 30px;
+}
+textarea {
+  height: 150px;
+}
+button {
+  background: #FC50F0;
+  border-color: black;
+  padding: 10px 40px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Lato', 'Open Sans', sans-serif;
+  margin-left: 280px;
+  margin-top: 20px;
+}
+
+footer {
+  background: white;
+  font-family: 'Lato', 'Open Sans', sans-serif;
+  font-size: 14px;
+  text-align: left;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 0px;
+  align-content: flex-end;
+}
+
+.copywright {
+  position: absolute;
+  float: none;
+  align-content: flex-end;
+  margin-top: 35px;
+  margin-bottom: 0;
+  margin-left: 40px;
+}
+
+.social-icons {
+  display: inline-block;
+  float: right;
+}
+
+.universal-inline-block {
+	display: inline-block;
+  margin-bottom: 15px
+}
+
+.fab-fa-facebook-f {
+  margin-right: 20px;
+}
+
+.social-icons li img {
+  text-align: right;
+  /* flex-flow: row; figure out how to align icons horizontally  */
+  width:30px;
+  height:30px;
+  padding: 10px;
+  float: right;
+{
